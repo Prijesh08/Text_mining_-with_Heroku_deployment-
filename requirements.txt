@@ -7,9 +7,9 @@ gunicorn==19.9.0
 itsdangerous==1.1.0
 Jinja2==2.10.1
 MarkupSafe==1.1.1
-Werkzeug==0.15.5
+Werkzeug>=0.15.5
 spacy>=2.2.0
 Click==7.0
 imbalanced-learn==0.8.0
 imblearn==0.0
-
+widgetsnbextension==3.5.1
