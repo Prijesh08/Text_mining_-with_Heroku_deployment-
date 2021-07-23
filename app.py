@@ -1,12 +1,12 @@
 import pandas as pd
-# import nltk
+
 import numpy as np
-# import pickle
+
 import spacy
-import click._bashcomplete
+
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
-from wordcloud import STOPWORDS
+
 from sklearn.neural_network import MLPClassifier
 from imblearn.over_sampling import SMOTE
 from flask import Flask,render_template,request
