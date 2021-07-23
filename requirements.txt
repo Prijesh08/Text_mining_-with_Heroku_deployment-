@@ -10,4 +10,6 @@ MarkupSafe==1.1.1
 Werkzeug==0.15.5
 spacy>=2.2.0
 Click==7.0
-
+imbalanced-learn==0.8.0
+imblearn==0.0
+nltk==3.6.2
