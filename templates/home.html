@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+
+  <style>
+    /* CSS code for button */
+    body {
+      background-image: url('static/images/bg_img.jpg');
+      /* background-color: rgb(227, 11, 255); */
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    /* CSS code for button */
+    .button_css {
+    color: #494949 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ffffff;
+    padding: 20px;
+    border: 4px solid #494949 !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+    }
+    
+    /* .button_css:hover {
+    color: #ffffff !important;
+    background: #f6b93b;
+    border-color: #f6b93b !important;
+    transition: all 0.4s ease 0s;
+    } */
+  </style>
+
+</head>
+
+<body>
+    <div class = "login">
+        <!-- Get input for predict the cancer -->
+        <center>
+        <form method="POST" action="{{ url_for('predict') }}" >
+            <h1 style="color: white;">Enter reviews here...</h1>
+            <textarea name="message" rows="7" cols="50"></textarea>
+        <!-- Show button -->
+        <div class="button_cont" align="center">
+        <button type="submit" class="btn btn-block btn-large"><strong>Predict Review</strong></button>
+        <br/>
+        </div>
+        </form>
+        </center>
+
+        <!-- Show predicted output using ML model -->
+        <div>
+            <center>
+        <h1 style="color: rgb(0, 0, 0);">{{prediction_text}}</h1>
+            </center>
+        </div>
+    </div> 
+
+</body>
+</html>
