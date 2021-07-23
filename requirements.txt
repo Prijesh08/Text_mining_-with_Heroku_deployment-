@@ -13,4 +13,3 @@ spacy>=2.2.0
 scipy>=0.15.1
 matplotlib>=1.4.3
 pickleshare==0.7.5
-
